@@ -14,6 +14,10 @@
 		1F43307C282FFAB8007EFD43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F43307B282FFAB8007EFD43 /* Assets.xcassets */; };
 		1F43307F282FFAB8007EFD43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F43307D282FFAB8007EFD43 /* LaunchScreen.storyboard */; };
 		1F433082282FFAB8007EFD43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F433081282FFAB8007EFD43 /* main.m */; };
+		1F43308D282FFFF3007EFD43 /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F43308C282FFFF3007EFD43 /* DataLoader.m */; };
+		1F43309028300A29007EFD43 /* HotSearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F43308F28300A29007EFD43 /* HotSearchItem.m */; };
+		1F43309428300D1A007EFD43 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F43309228300D1A007EFD43 /* TableViewCell.m */; };
+		1F43309828301A13007EFD43 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F43309728301A13007EFD43 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		1F43307E282FFAB8007EFD43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F433080282FFAB8007EFD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F433081282FFAB8007EFD43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F43308B282FFFF3007EFD43 /* DataLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
+		1F43308C282FFFF3007EFD43 /* DataLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataLoader.m; sourceTree = "<group>"; };
+		1F43308E28300A29007EFD43 /* HotSearchItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotSearchItem.h; sourceTree = "<group>"; };
+		1F43308F28300A29007EFD43 /* HotSearchItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotSearchItem.m; sourceTree = "<group>"; };
+		1F43309128300D1A007EFD43 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		1F43309228300D1A007EFD43 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		1F43309628301A13007EFD43 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1F43309728301A13007EFD43 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +73,13 @@
 		1F43306E282FFAB5007EFD43 /* HotSpot */ = {
 			isa = PBXGroup;
 			children = (
+				1F43308A282FFBC5007EFD43 /* Controller */,
+				1F433089282FFBBB007EFD43 /* View */,
+				1F433088282FFBB1007EFD43 /* Model */,
 				1F43306F282FFAB5007EFD43 /* AppDelegate.h */,
 				1F433070282FFAB5007EFD43 /* AppDelegate.m */,
 				1F433072282FFAB5007EFD43 /* SceneDelegate.h */,
 				1F433073282FFAB5007EFD43 /* SceneDelegate.m */,
-				1F433075282FFAB5007EFD43 /* ViewController.h */,
-				1F433076282FFAB5007EFD43 /* ViewController.m */,
 				1F433078282FFAB5007EFD43 /* Main.storyboard */,
 				1F43307B282FFAB8007EFD43 /* Assets.xcassets */,
 				1F43307D282FFAB8007EFD43 /* LaunchScreen.storyboard */,
@@ -74,6 +87,37 @@
 				1F433081282FFAB8007EFD43 /* main.m */,
 			);
 			path = HotSpot;
+			sourceTree = "<group>";
+		};
+		1F433088282FFBB1007EFD43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F43308E28300A29007EFD43 /* HotSearchItem.h */,
+				1F43308F28300A29007EFD43 /* HotSearchItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F433089282FFBBB007EFD43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F43309128300D1A007EFD43 /* TableViewCell.h */,
+				1F43309228300D1A007EFD43 /* TableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F43308A282FFBC5007EFD43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F433075282FFAB5007EFD43 /* ViewController.h */,
+				1F433076282FFAB5007EFD43 /* ViewController.m */,
+				1F43308B282FFFF3007EFD43 /* DataLoader.h */,
+				1F43308C282FFFF3007EFD43 /* DataLoader.m */,
+				1F43309628301A13007EFD43 /* WebViewController.h */,
+				1F43309728301A13007EFD43 /* WebViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F43309428300D1A007EFD43 /* TableViewCell.m in Sources */,
+				1F43309028300A29007EFD43 /* HotSearchItem.m in Sources */,
 				1F433077282FFAB5007EFD43 /* ViewController.m in Sources */,
+				1F43309828301A13007EFD43 /* WebViewController.m in Sources */,
 				1F433071282FFAB5007EFD43 /* AppDelegate.m in Sources */,
 				1F433082282FFAB8007EFD43 /* main.m in Sources */,
 				1F433074282FFAB5007EFD43 /* SceneDelegate.m in Sources */,
+				1F43308D282FFFF3007EFD43 /* DataLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RL38L26Z9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HotSpot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,6 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6RL38L26Z9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HotSpot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
